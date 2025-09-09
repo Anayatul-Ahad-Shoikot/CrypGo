@@ -1,7 +1,6 @@
 # Crypgo – Crypto Landing Page
 
-A sleek, fully-responsive landing page for a modern cryptocurrency exchange.  This landing page was an assement and buid in under 2 hours from figma design to real website. Live demo here 👉 **[Click](https://your-username.github.io/crypgo)**
-
+A sleek, fully-responsive landing page for a modern cryptocurrency exchange.  This landing page was an assement and buid in under 2 hours from scratch figma design to real website. Live demo here 👉 **[Click](https://anayatul-ahad-shoikot.github.io/CrypGo/)**
 ---
 
 ## Features
@@ -23,17 +22,6 @@ A sleek, fully-responsive landing page for a modern cryptocurrency exchange.  Th
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)
 ![Boxicons](https://img.shields.io/badge/Boxicons-2EA1F4?style=flat-square&logo=boxicons&logoColor=white)
 ![Google Fonts](https://img.shields.io/badge/Google%20Fonts-4285F4?style=flat-square&logo=google&logoColor=white)
-
----
-
-## Project Structure
-
-crypgo/
-|- assets/              # images, logos, icons
-|- index.html           # single-page markup
-|- tailwind.config.js   # tailwind configure file
-|- style.css            # tiny custom stylesheet (optional)
-|- README.md            # this file
 
 ---
 
