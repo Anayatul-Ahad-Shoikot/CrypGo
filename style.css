@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+  scroll-behavior: smooth;
+  color: white;
+}
+:root {
+  --mainColor: black;
+  --accentColor: #99e39e;
+  --contentWidth: 1300px;
+}
+#menubar a {
+  font-style: 16px;
+  font-family: sans-serif;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+#menubar a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -8px;
+  width: 0%;
+  height: 2px;
+  background: var(--accentColor);
+  transform: translateX(-50%);
+  transition: all 0.3s ease-in-out;
+}
+#menubar a:hover {
+  cursor: pointer;
+  color: var(--accentColor);
+}
+#menubar a:hover::after {
+  width: 100%;
+}
+.navBtn {
+  padding: 12px 20px;
+  background: var(--accentColor);
+  border-radius: 10px;
+  color: black;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  outline: none;
+  border: none;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid transparent;
+}
+.navBtn i {
+  color: black;
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+}
+.navBtn:hover {
+  background: rgb(153, 227, 158, 0.15);
+  color: var(--accentColor);
+  border: 1px solid rgb(255, 255, 255, 0.3);
+  cursor: pointer;
+}
+.navBtn:hover i {
+  color: var(--accentColor);
+  transform: rotate(180deg);
+}
+.tagline {
+  color: white;
+  font-weight: 600;
+}
+.tagline span {
+  color: var(--accentColor);
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+#hoverLogo::before {
+  content: url("/assets/bg_effect.png");
+  position: absolute;
+  right: 0%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.5;
+}

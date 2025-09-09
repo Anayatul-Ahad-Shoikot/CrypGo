@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crypgo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body
+    class="flex flex-col justify-center items-center gap-[5rem] bg-black text-[clamp(1rem,1.2vw+0.5rem,1.25rem)]">
+    <nav class="container max-w-[1200px] mx-auto p-5 sticky top-0 z-[100] bg-black/90">
+        <div class="flex items-center justify-between">
+            <img src="./assets/logo.png" width="180" alt="logo" />
+            <button id="hamburger" class="md:hidden text-white focus:outline-none">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+            <div id="menu"
+                class="absolute md:static top-full left-0 w-full md:w-auto bg-black/90 md:bg-transparent flex flex-col md:flex-row items-center gap-6 px-6 pb-6 md:px-0 md:pb-0 translate-y-[-150%] md:translate-y-0 transition-transform duration-700 ease-in-out">
+                <ul class="flex flex-col md:flex-row items-center gap-6 list-none" id="menubar">
+                    <li><a href="#" class="hover:text-[#99E39E]">Features</a></li>
+                    <li>
+                        <a href="#Features" class="hover:text-[#99E39E]">Benefits</a>
+                    </li>
+                    <li>
+                        <a href="#Services" class="hover:text-[#99E39E]">Services</a>
+                    </li>
+                    <li><a href="#" class="hover:text-[#99E39E]">WhyCrypgo</a></li>
+                    <li><a href="#FAQ" class="hover:text-[#99E39E]">FAQs</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section
+        class="container max-w-[1200px] mx-auto px-8 flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
+        <div class="flex flex-col items-start gap-4 lg:gap-6 max-w-full lg:max-w-[520px] text-center md:text-left">
+            <button
+                class="text-[#99e39e] font-extrabold bg-[rgb(153,227,158,0.15)] px-[20px] py-[5px] rounded-full border border-white/20 self-center md:self-start">
+                Future of crypto trading
+            </button>
+            <h1 class="text-[clamp(2.5rem,5vw+1rem,4.5rem)] leading-tight font-semibold">
+                Fast and Secure Cryptocurrency Exchange
+            </h1>
+            <p class="text-white/60">
+                Trade cryptocurrencies with ease, security, and advanced features on
+                our cutting-edge platform.
+            </p>
+            <button class="navBtn self-center md:self-start">
+                <i class="bx bxs-right-arrow"></i> Explore More
+            </button>
+        </div>
+        <img src="./assets/banner.png" alt="Hero Banner" class="w-full max-w-[585px] h-auto object-contain" />
+    </section>
+    <section class="container max-w-[1200px] mx-auto px-8 flex items-center justify-center flex-col">
+        <p class="tagline">Trusted by top <span>crypto platforms</span></p>
+        <div class="relative w-full overflow-hidden py-7">
+            <div
+                class="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_40%,#000_70%)] z-50">
+            </div>
+            <div class="flex w-[100%] h-auto animate-[scroll_10s_linear_infinite]">
+                <div class="flex items-center justify-around gap-12 w-full">
+                    <div class="flex items-center gap-2">
+                        <img src="logo1.svg" class="h-10 grayscale hover:grayscale-0 transition" alt="" />
+                        <p class="text-white/70 text-sm font-medium">BrandOne</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <img src="logo1.svg" class="h-10 grayscale hover:grayscale-0 transition" alt="" />
+                        <p class="text-white/70 text-sm font-medium">BrandOne</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <img src="logo1.svg" class="h-10 grayscale hover:grayscale-0 transition" alt="" />
+                        <p class="text-white/70 text-sm font-medium">BrandOne</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <img src="logo1.svg" class="h-10 grayscale hover:grayscale-0 transition" alt="" />
+                        <p class="text-white/70 text-sm font-medium">BrandOne</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section
+        class="container max-w-[1200px] mx-auto px-8 flex flex-col-reverse lg:flex-row items-center justify-between gap-8 lg:gap-12"
+        id="Features">
+        <div class="flex flex-col items-start gap-10 lg:gap-6 max-w-full lg:max-w-[550px]">
+            <p class="tagline self-center md:self-auto">
+                Why choose <span>crypgo</span>
+            </p>
+            <h1
+                class="text-white text-[clamp(1.5rem,4vw+1rem,3rem)] leading-tight font-semibold text-center md:text-left">
+                Features of the crypto framer mobile application
+            </h1>
+            <div class="flex items-center justify-center md:justify-start flex-wrap gap-7">
+                <div class="flex items-center justify-center gap-5 w-full md:max-w-[260px]">
+                    <img src="./assets/link.png" alt="" width="40" height="40" />
+                    <p class="text-white/60 text-[18px]">
+                        Designed for crypto trading platforms
+                    </p>
+                </div>
+                <div class="flex items-center justify-center gap-5 w-full md:max-w-[260px]">
+                    <img src="./assets/thunder.png" alt="" width="40" height="40" />
+                    <p class="text-white/60 text-[18px]">
+                        Kickstart your crypto website today
+                    </p>
+                </div>
+                <div class="flex items-center justify-center gap-5 w-full md:max-w-[260px]">
+                    <img src="./assets/settings.png" alt="" width="40" height="40" />
+                    <p class="text-white/60 text-[18px]">
+                        Launch your blockchain platform today
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <img src="./assets/banner2.png" alt="banner 2" class="w-full max-w-[585px] h-auto object-contain" />
+        </div>
+    </section>
+    <section
+        class="container max-w-[1200px] overflow-hidden relative flex flex-col gap-10 md:flex-row items-center justify-between my-8 p-[60px] border border-[rgb(128,128,128,0.3)] rounded-0 md:rounded-[15px] bg-[rgb(110,112,168,0.15)] flex-wrap"
+        id="hoverLogo">
+        <div class="flex flex-col max-w-[550px] text-center md:text-left">
+            <h1 class="tagline mb-3">
+                Crypgo powered by <span>framer platform</span>
+            </h1>
+            <p class="text-white/60">
+                Our landing page empower framer developers to have free, safer and
+                more trustworthy experiences
+            </p>
+        </div>
+        <button class="navBtn pointer-events-auto z-50">
+            <i class="bx bxs-right-arrow"></i> Explore More
+        </button>
+    </section>
+
+    <section class="container max-w-[1200px] flex flex-col md:flex-row justify-center items-center mx-auto px-8"
+        id="Services">
+        <div class="left">
+            <img src="./assets/banner3.png" alt="banner 3" class="w-full max-w-[585px] h-auto object-contain" />
+        </div>
+        <div class="flex flex-col items-start gap-5 lg:gap-6 max-w-full md:max-w-[550px]">
+            <p class="tagline self-center md:self-start">
+                Crypto landing page <span>template</span>
+            </p>
+            <h1
+                class="text-white text-[clamp(1.5rem,4vw+1rem,3rem)] leading-tight font-semibold text-center md:text-left">
+                Create your cryptocurrency portfolio today
+            </h1>
+            <p class="text-white/60 text-center md:text-left">
+                Coinbase has a variety of features that make it the best place to
+                start trading.
+            </p>
+            <div class="flex flex-col gap-2 w-full px-5">
+                <div class="flex items-center gap-6 p-2 border-b border-[rgba(255,255,255,0.2)] w-full">
+                    <img src="./assets/clock.png" alt="" />
+                    <p class="text-white/60">Manage your portfolio</p>
+                </div>
+                <div class="flex items-center gap-6 p-2 border-b border-[rgba(255,255,255,0.2)] w-full">
+                    <img src="./assets/dollar.png" alt="" />
+                    <p class="text-white/60">Vault protection</p>
+                </div>
+                <div class="flex items-center gap-6 p-2 border-b border-[rgba(255,255,255,0.2)] w-full">
+                    <img src="./assets/mobile.png" alt="" />
+                    <p class="text-white/60">Mobile apps</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container max-w-[1200px] flex flex-col justify-center items-center mx-auto px-8 gap-3" id="FAQ">
+        <p class="tagline">Popular <span>questions</span></p>
+        <h1 class="text-white text-[clamp(1.5rem,4vw+1rem,3rem)] leading-tight font-semibold text-center md:text-left">
+            Learn more about Crypgo
+        </h1>
+        <p class="text-white/60">
+            We accept 100+ cryptocurrencies around the world
+        </p>
+        <div class="mt-10 flex flex-col gap-5">
+            <div class="w-full rounded-lg bg-[rgba(110,112,168,0.15)] p-4">
+                <button class="accordion-header flex w-full items-center justify-between text-left">
+                    <p class="text-white/80">What is Crypgo?</p>
+                    <i class="bx bxs-chevron-down text-[#99e39e] transition-transform duration-300"></i>
+                </button>
+                <div class="accordion-body max-h-0 overflow-hidden transition-all duration-300">
+                    <p class="pt-5 text-white/60">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo laudantium molestiae illum maxime
+                        provident dolorum!
+                    </p>
+                </div>
+            </div>
+            <div class="w-full rounded-lg bg-[rgba(110,112,168,0.15)] p-4">
+                <button class="accordion-header flex w-full items-center justify-between text-left">
+                    <p class="text-white/80">Is Crypgo available worldwide?</p>
+                    <i class="bx bxs-chevron-down text-[#99e39e] transition-transform duration-300"></i>
+                </button>
+                <div class="accordion-body max-h-0 overflow-hidden transition-all duration-300">
+                    <p class="pt-5 text-white/60">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia iusto modi ipsam. Aliquid iure
+                        quam fugit tempore magnam odio consequatur.
+                    </p>
+                </div>
+            </div>
+            <div class="w-full rounded-lg bg-[rgba(110,112,168,0.15)] p-4">
+                <button class="accordion-header flex w-full items-center justify-between text-left">
+                    <p class="text-white/80">Which cryptocurrencies are supported on Crypgo?</p>
+                    <i class="bx bxs-chevron-down text-[#99e39e] transition-transform duration-300"></i>
+                </button>
+                <div class="accordion-body max-h-0 overflow-hidden transition-all duration-300">
+                    <p class="pt-5 text-white/60">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium quas expedita
+                        explicabo sequi distinctio fugiat neque nesciunt temporibus asperiores ad similique ut!
+                    </p>
+                </div>
+            </div>
+            <div class="w-full rounded-lg bg-[rgba(110,112,168,0.15)] p-4">
+                <button class="accordion-header flex w-full items-center justify-between text-left">
+                    <p class="text-white/80">Is my personal information secure with Crypgo?</p>
+                    <i class="bx bxs-chevron-down text-[#99e39e] transition-transform duration-300"></i>
+                </button>
+                <div class="accordion-body max-h-0 overflow-hidden transition-all duration-300">
+                    <p class="pt-5 text-white/60">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, non eaque, officiis ex
+                        quia velit perferendis corporis sequi laborum debitis quo sapiente provident facere aliquam!
+                    </p>
+                </div>
+            </div>
+            <div class="w-full rounded-lg bg-[rgba(110,112,168,0.15)] p-4">
+                <button class="accordion-header flex w-full items-center justify-between text-left">
+                    <p class="text-white/80">Are there any deposit or withdrawal fees?</p>
+                    <i class="bx bxs-chevron-down text-[#99e39e] transition-transform duration-300"></i>
+                </button>
+                <div class="accordion-body max-h-0 overflow-hidden transition-all duration-300">
+                    <p class="pt-5 text-white/60">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat esse modi atque vitae nihil
+                        minus!
+                    </p>
+                </div>
+            </div>
+            <div class="w-full rounded-lg bg-[rgba(110,112,168,0.15)] p-4">
+                <button class="accordion-header flex w-full items-center justify-between text-left">
+                    <p class="text-white/80">Does Crypgo offer advanced trading tools?</p>
+                    <i class="bx bxs-chevron-down text-[#99e39e] transition-transform duration-300"></i>
+                </button>
+                <div class="accordion-body max-h-0 overflow-hidden transition-all duration-300">
+                    <p class="pt-5 text-white/60">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi voluptatum dolore labore sapiente
+                        quo doloremque reprehenderit facilis esse!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container max-w-[1200px] flex flex-col md:flex-row justify-between items-center my-10 px-8 gap-10">
+        <div class="max-w-[490px] flex flex-col justify-start gap-3">
+            <img src="./assets/logo.png" alt="" class="w-[135px] h-auto self-center md:self-start">
+            <p class="text-white/60 text-center md:text-left">Transform your crypto business with Crypgo Framer, a
+                template for startups and blockchain services.</p>
+            <div class="flex justify-center md:justify-start gap-5">
+                <img src="./assets/insta.png" alt="">
+                <img src="./assets/fb.png" alt="">
+                <img src="./assets/x.png" alt="">
+            </div>
+        </div>
+        <div class="flex justify-between w-full">
+            <ul class="flex flex-col gap-2">
+                <li class="text-white font-bold">Links</li>
+                <li class="text-white/60 hover:text-white hover:cursor-pointer">Features</li>
+                <li class="text-white/60 hover:text-white hover:cursor-pointer">Benefits</li>
+                <li class="text-white/60 hover:text-white hover:cursor-pointer">Services</li>
+                <li class="text-white/60 hover:text-white hover:cursor-pointer">Why Crypgo</li>
+                <li class="text-white/60 hover:text-white hover:cursor-pointer">FAQs</li>
+            </ul>
+            <ul class="flex flex-col gap-2">
+                <li class="text-white font-bold">Other Pages</li>
+                <li class="text-white/60 hover:text-white hover:cursor-pointer">Error 404</li>
+                <li class="text-white/60 hover:text-white hover:cursor-pointer">Terms & Conditions</li>
+                <li class="text-white/60 hover:text-white hover:cursor-pointer">Privacy Policy </li>
+            </ul>
+            <div class="flex flex-col gap-2">
+                <p class="text-white font-bold">Download app</p>
+                <img src="./assets/playstore.png" alt="">
+                <img src="./assets//apple.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <footer class="container max-w-[1200px] border-t border-[rgb(255,255,255,0.3);]">
+        <p class="text-center text-white/60 my-[3rem]">Copyright <span class="text-white/60" id="date"></span> Crypgo.
+            All rights reserved</p>
+    </footer>
+
+    <script>
+        const btn = document.getElementById("hamburger");
+        const menu = document.getElementById("menu");
+        btn.addEventListener("click", () =>
+            menu.classList.toggle("translate-y-[-150%]")
+        );
+
+        document.querySelectorAll(".accordion-header").forEach((btn) => {
+            btn.addEventListener("click", () => {
+                const body = btn.nextElementSibling;
+                const isOpen = body.style.maxHeight;
+                body.style.maxHeight = isOpen ? null : body.scrollHeight + "px";
+                btn.querySelector("i").classList.toggle("rotate-180", !isOpen);
+            });
+        });
+
+        const date = document.getElementById('date');
+        date.textContent = (new Date()).getFullYear();
+    </script>
+</body>
+
+</html>
